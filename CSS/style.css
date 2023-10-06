@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(132deg, rgba(228, 9, 9, 0.86) 46.45%, rgba(238, 77, 77, 0.868) 71.55%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+   
+}
+
+.formulario{
+
+    width: 41%;
+    height: 100vh;
+    flex-shrink: 0;
+    background:#2F2D2C;
+ 
+}
+.container{
+    margin-top: 118px;     
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+                
+}
+.formulario h1{
+    color: #FAFA38;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        padding: 0 0 20px 0;
+}
+.formulario form{
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0; 
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffff;
+}
+.username label{
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    color: #adadad;
+    transform: translate(0%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffff;
+
+}
+.username input:focus ~ label,
+.username input:valid ~ label{
+    top: -15px;
+    color: #ffff;
+
+
+
+}
+
+form .Email{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0; 
+}
+
+.Email input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffff;
+}
+.Email label{
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    color: #adadad;
+    transform: translate(0%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.Email span::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffff;
+
+}
+.Email input:focus ~ label,
+.Email input:valid ~ label{
+    top: -15px;
+    color: #ffff;
+
+}
+
+
+form .password {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.password input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffff;
+}
+
+.password label {
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    color: #adadad;
+    transform: translate(0%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.password span::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffff;
+
+}
+
+.password input:focus~label,
+.password input:valid~label {
+    top: -10px;
+    color: #ffff;
+}
+
+
+
+.recordar{
+    margin: -5px 0 20px 5px;
+    color:rgba(255, 255, 255, 0.50);
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 12px;
+    background: #F54646;
+   
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color:#F54646;
+    transition: .4s;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.registrarse{
+    margin: 85px 0;
+    margin-top: 136px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.50);;
+}
+
+.registro{
+    --bs-btn-padding-x: 0.75rem;
+        --bs-btn-padding-y: 0.375rem;
+       font-size: Poppins;
+        --bs-btn-font-weight: 400;
+        --bs-btn-line-height: 1.5;
+        --bs-btn-color: var(--bs-body-color);
+        --bs-btn-bg: transparent;
+        --bs-btn-border-width: var(--bs-border-width);
+        --bs-btn-border-color: transparent;
+        --bs-btn-border-radius: var(--bs-border-radius);
+        --bs-btn-hover-border-color: transparent;
+        --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+        --bs-btn-disabled-opacity: 0.65;
+        --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+        display: inline-block;
+        padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+        font-family: var(--bs-btn-font-family);
+        font-size: var(--bs-btn-font-size);
+        font-weight: var(--bs-btn-font-weight);
+        line-height: var(--bs-btn-line-height);
+        color: #FAFA38;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+        border-radius: var(--bs-btn-border-radius);
+        background-color: var(--bs-btn-bg);
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+}
+
+button[type="button"]:hover {
+  
+    background: #333437;
+    transition: .6s;
+    
+}
+
+.col{
+    
+    height: 100vh;
+    background-position: center;
+}
+
+#pantalla-dividida{
+    display: flex;
+}
+.display-1{
+    margin-top: 270px;
+    margin-left: 240px;
+    font-size: 80px!important;
+    font-weight: 700!important;
+    line-height: 70px!important;
+    font-style: normal !important;
+    font-family: Poppins;
+    color: #FAFA38;
+   
+}
+.display-2 {
+    margin-top: -24px;
+    margin-left: 415px;
+    font-size: 80px !important;
+    font-weight: 700 !important;
+    line-height: 70px !important;
+    font-style: normal !important;
+    font-family: Poppins;
+    color: #FAFA38;
+    
+}
+.display-3 {
+    margin-top: -11px;
+    margin-left: 240px;
+    font-size: 80px !important;
+    font-weight: 700 !important;
+    line-height: 70px !important;
+    font-style: normal !important;
+    font-family: Poppins;
+    color: #FAFA38;
+    
+}
+
+h4{
+    margin-left: 240px;
+    color: #EEE!important;
+    font-family: Poppins;
+    font-size: 29px!important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: normal!important;
+
+}
