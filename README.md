@@ -1,2 +1,0 @@
-# TrulyNolen
-proyecto SOftware
