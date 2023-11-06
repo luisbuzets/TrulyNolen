@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./Css/styles.css">
+</head>
+
+<body>
+
+    <h1 class="formu">Cliente/Persona</h1>
+
+    <form action='' class='form'>
+
+        <p class='field required'>
+            <label class='label required' for='name'>Nombre:</label>
+            <input class='text-input' id='name' name='name' required type='text'><br>
+
+            <label class='label required' for='apellido'>Apellido:</label>
+            <input class='text-input' id='apellido' name='apellido' required type='text'>
+        </p>
+
+        <p class='field half'>
+            <label class='label' for='phone'>Teléfono:</label>
+            <input class='text-input' id='phone' name='phone' type='tel'>
+        </p>
+
+        <p class='field half'>
+            <label class='label' for='address'>Dirección:</label>
+            <input class='text-input' id='address' name='address' type='text'>
+        </p>
+
+        <p class='field required half'>
+            <label class='label' for='email'>Correo electrónico:</label>
+            <input class='text-input' id='email' name='email' required type='email'>
+        </p>
+
+        <p class='field required half'>
+            <label class='label' for='rtn'>RTN:</label>
+            <input class='text-input' id='rtn' name='rtn' required type='text'>
+        </p>
+
+        <p class='field'>
+            <label class='label' for='about'>Descripción:</label>
+            <textarea class='textarea' cols='50' id='about' name='about' rows='4'></textarea>
+        </p>
+
+        <p class='field'>
+            <input class='button' type='submit' value='Enviar'>
+        </p>
+
+    </form>
+
+</body>
+
+</html>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../CSS/paginaprincipal.css">
     <link rel="stylesheet" href="../CSS/calendario.css">
     <link rel="stylesheet" href="../CSS/dycalendar.css">
@@ -17,40 +20,32 @@
     <header class="header">
         <a href="#" class="logo">Truly Nolen</a>
         <div class="Horizontal">
-            <div class="alert alert-danger" id="greet" role="alert">
-                <script>
-    
-                    const Toast = Swal.mixin({
-                        toast: true,
-                        position: 'top-end',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        timerProgressBar: true,
-                        didOpen: (toast) => {
-                          toast.addEventListener('mouseenter', Swal.stopTimer)
-                          toast.addEventListener('mouseleave', Swal.resumeTimer)
-                        }
-                      })
-                      
-                      Toast.fire({
-                        icon: 'success',
-                        title: 'Signed in successfully'
-                      })
-                </script>
+            <div class="alert alert-success" id="greet" role="alert">
+                
             </div>
         </div>
      
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Trulyn</a>
-             <a href="" >Ventas </a>  
+            <a class="nav-link active" href="">Inicio</a>
+                <a href="">
+                    <a class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" >Trulyn</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./Cliperson.html">Agregar Cliente Persona</a></li>
+                          <li><a class="dropdown-item" href="./clico.html">Agregar Cliente Comercial</a></li>
+                        </ul>
+                      </a>
+                </a>
+                    
+            
+             <a href="./ventas.html" >Ventas </a>  
             <a href="#">Post Ventas</a>
             <a href="" type="button" id="CerrarSesion">Cerrar Sesion</a>
         </nav>
     </header>
     <div class="nav-bg"></div>
-    
+
     
 </section>
     <section>
@@ -63,9 +58,10 @@
         </div>
     
     </section>
+
+    
    
     
-  
 
   <!--<h2 id="greet"></h2> -->  
 

@@ -65,7 +65,7 @@ body {
   display: none;
 }
 .horizontal {
-  position: relative;
+ 
     top: 70px;
     left: -305px;
     right: 400px;
