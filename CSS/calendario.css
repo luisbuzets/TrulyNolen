@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 .box{
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 150px;
     left: 950px;
-    right: 200px;
+    right: 300px;
     }
 
 .container{
