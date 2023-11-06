@@ -13,45 +13,44 @@
 
 </head>
 <body>
-    
-     
     <section>
     <header class="header">
         <a href="#" class="logo">Truly Nolen</a>
-        <div class="alert alert-danger" id="greet" role="alert">
-            <script>
-
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                      toast.addEventListener('mouseenter', Swal.stopTimer)
-                      toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    }
-                  })
-                  
-                  Toast.fire({
-                    icon: 'success',
-                    title: 'Signed in successfully'
-                  })
-            </script>
+        <div class="Horizontal">
+            <div class="alert alert-danger" id="greet" role="alert">
+                <script>
+    
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'success',
+                        title: 'Signed in successfully'
+                      })
+                </script>
+            </div>
         </div>
+     
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#">Inicio</a>
             <a href="#">Trulyn</a>
-            <a href="#">Ventas</a>
+             <a href="" >Ventas </a>  
             <a href="#">Post Ventas</a>
-
-            <form class="container-fluid justify-content-start">
-                <button class="btn btn-sm btn-outline-secondary" type="button" id="CerrarSesion">Cerrar Sesion</button>
-              </form>
+            <a href="" type="button" id="CerrarSesion">Cerrar Sesion</a>
         </nav>
     </header>
     <div class="nav-bg"></div>
+    
     
 </section>
     <section>
