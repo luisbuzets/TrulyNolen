@@ -85,7 +85,18 @@ body {
   
 }
 .dropdown-menu{
-  background: rgba(255, 255, 255, 0.1);
+  color:rgb(255, 255, 255);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+
+}
+.nav-link dropdown-toggle{
+  color:rgb(255, 255, 255);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+.dropdown-menu show{
+  color:rgb(255, 255, 255);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   text-decoration: none;
 
