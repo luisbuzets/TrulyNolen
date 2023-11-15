@@ -13,7 +13,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
+  padding: 5px 100px;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
@@ -65,19 +65,42 @@ body {
   display: none;
 }
 .horizontal {
- 
     top: 70px;
     left: -305px;
-    right: 400px;
+    right: 200px;
+    
 }
 .horizontal{
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
   }
+ 
+.dropdown-menu{
+     background: rgba(255, 255, 255, 0.1);
+     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+     text-decoration: none;
+  
+}
+.dropdown-menu{
+  color:rgb(255, 255, 255);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
 
+}
+.nav-link dropdown-toggle{
+  color:rgb(255, 255, 255);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+.dropdown-menu show{
+  color:rgb(255, 255, 255);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+
+}
 @media (max-width: 992px) {
   .header {
     padding: 1.25rem 4%;
