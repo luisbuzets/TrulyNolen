@@ -1,37 +1,31 @@
-const express = require ('express');
-const mongoose = require("mongoose");
-const path = require('path');
-const bodyParser = require('body-parser');
-const app = express();
-const bcrypt  = require('bcrypt');
-require("dotenv").config();
+var mysql = require('mysql');
 
-//app.use(bodyParser.json());
-//app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
-
-
-const  port = process.env.PORT || 4000;
-
-//const User = require('./src/models/user');
-
-
-
-
-//rutas
-//app.get('/',(req, res) => {
-//    res.send("Welcome to my API") });
-
-
-// coneccion mongodb
-mongoose
-.connect(process.env.MONGODB_URI)
-.then(() => console.log('Connected to MongoDB Atlas'))
-.catch((error) => console.error(error))
-
-
-app.listen(port, () =>{
-    console.log('server listening on port', port)
+var conexion = mysql.createConnection({
+    host: 'database-2.c7hxgbp2wlyb.us-east-1.rds.amazonaws.com',
+    database: 'TrulyNolen',
+    user: 'admin',
+    password: 'admin1234'
 });
 
+conexion.connect( function(error){
+    if(error){
+        throw error;
 
+    }else{
+        console.log('CONEXION EXITOSA');
+    }
+
+});
+
+// consulta extraer datos
+conexion.query('SELECT * FROM Cliente ',function (error,results, fields){
+    if(error)
+    throw error;
+
+    results.forEach(result => {
+        console.log(result);
+    });
+
+});
+
+conexion.end();
