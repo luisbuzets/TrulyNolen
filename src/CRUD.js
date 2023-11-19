@@ -85,3 +85,73 @@ onValue(dbRef, (snapshot) => {
 }, {
   onlyOnce: true
 });
+
+///////////////////////////////////////////
+
+
+const registroforms = document.getElementById('registros')
+
+  const cliente = registroforms['cli'].value
+  const TipoServicio = registroforms['tips'].value
+  const Precio = registroforms['precio'].value
+  const cantidadVisitas = registroforms['cantVis'].value
+  const FechaTentativa = registroforms['fect'].value
+  const OS = registroforms['os'].value
+  const comentarios = registroforms['com'].value
+
+function writeUserData(cl,t,p,ca,f,os,com) {
+
+  push(ref(db, 'Ventas/' ), {
+    cliente: cl,
+    TipoServicio: t,
+    Precio: p,
+    cantidadVisitas: ca,
+    FechaTentativa: f,
+    OS: os,
+    comentarios: com
+  });
+}
+
+registroforms.addEventListener('submit', (e)=> {
+
+  const cliente = registroforms['cli'].value
+  const TipoServicio = registroforms['tips'].value
+  const Precio = registroforms['precio'].value
+  const cantidadVisitas = registroforms['cantVis'].value
+  const FechaTentativa = registroforms['fect'].value
+  const OS = registroforms['os'].value
+  const comentarios = registroforms['com'].value
+
+  writeUserData(cliente,TipoServicio,Precio,cantidadVisitas,FechaTentativa,OS,comentarios)
+
+})
+
+/*const updtboton = document.querySelectorAll('updtboton')
+updtboton.forEach(button => {
+
+button.addEventListener('click', (e) => {
+
+  console.log(e.target.dataset.id)
+
+
+})
+
+})*/
+
+const tabl = document.getElementById('Table')
+const dbRefs = ref(db, 'Ventas/');
+
+onValue(dbRefs, (snapshot) => {
+  snapshot.forEach((childSnapshot) => {
+    const childKey = childSnapshot.key;
+    const childData = childSnapshot.val();
+    console.log(childData,childKey)
+         
+    tb.innerHTML += '<tr><th>'+ childKey +'</th><td>' + childData.cliente + '</td> <td>' + childData.TipoServicio +
+    '</td> <td>'+childData.Precio+'</td> <td>'+childData.cantidadVisitas+'</td> <td>'+childData.FechaTentativa+
+    '</td> <td>'+childData.OS+'</td> <td> <button class="button is-warning" id="updtboton">editar</button> <button class="button is-danger" id="delete">eliminar</button> </td> </tr>'
+
+  });
+}, {
+  onlyOnce: true
+});

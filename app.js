@@ -1,10 +1,12 @@
 var mysql = require('mysql');
 
 var conexion = mysql.createConnection({
+
     host: 'database-2.c7hxgbp2wlyb.us-east-1.rds.amazonaws.com',
     database: 'TrulyNolen',
     user: 'admin',
     password: 'admin1234'
+
 });
 
 conexion.connect( function(error){
@@ -16,6 +18,7 @@ conexion.connect( function(error){
     }
 
 });
+
 
 // consulta extraer datos
 conexion.query('SELECT * FROM Cliente ',function (error,results, fields){
