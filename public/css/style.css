@@ -2,20 +2,20 @@
 
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
-
+/*
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
-
+*/
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
 
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
+/*
 @import url(css/animate.min.css);
 @import url(css/normalize.css);
 @import url(css/icomoon.css);
@@ -27,7 +27,7 @@
 @import url(css/jquery.fancybox.min.css);
 @import url(css/jquery-ui.css);
 @import url(css/nice-select.css);
-
+*/
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -774,7 +774,7 @@ button {
 
 .footer {
      background: #252525;
-     padding-top: 90px;
+     padding-top: 31px;
      text-align: center;
      font-family: 'Roboto', sans-serif;
 }
@@ -837,3 +837,19 @@ ul.location_icon li a {
 .shop {
      margin-bottom: 90px;
 }
+
+/*8888888888 estilos en tabla 8888888888888888 */
+
+ 
+ .centered {
+     text-align: center !important;
+     vertical-align: middle !important;
+ }
+
+ #datatable_users{
+    /* background: #ffffff; */
+    background: url(images/html_table.jpg) center /cover;
+     background: -webkit-linear-gradient(to right, #6279f0, #6bb7ca)!important; /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #93f1f8, rgb(94, 207, 241), 179, 180)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+ }

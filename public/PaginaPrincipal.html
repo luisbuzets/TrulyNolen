@@ -21,11 +21,24 @@
       <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!--<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">-->
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link rel="shortcut icon" href="images/favicon-32x32-.png">
+        <!-- Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+        <!-- DataTable -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+        <!-- Font Awesome -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+
      
    </head>
    <!-- body -->
@@ -60,10 +73,6 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="PostVenta.html">Post Ventas</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="calendario.html">Eventos</a>
-                              </li>
-                              
                               <li class="nav-item d_none login_btn">
                                  <a class="nav-link"  type="button" id="CerrarSesion">Cerrar Sesión</a>
                               </li>
@@ -80,24 +89,35 @@
       <!-- about section -->
       <div class="about">
          <div class="container">
-            <div class="row d_flex">
-               <div class="col-md-5">
-                  <div class="about_img">
-                  </section>
-                  <section>
-                      <div class="box">
-                          <div class="container">
-                  
-                              <div id="dycalendar"></div>
-                          </div>
-                     
+
+               <div class="container my-4">
+                  <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <table id="datatable_users" class="table table-striped">
+                              <thead>
+                                  <tr>
+                                      <th class="centered">N°</th>
+                                      <th class="centered">Nombre</th>
+                                      <th class="centered">Email</th>
+                                      <th class="centered">Ciudad</th>
+                                      <th class="centered">Compa;ia</th>
+                                      <th class="centered">Estado</th>
+                                      <th class="centered">Opcion</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="tableBody_users"></tbody>
+                          </table>
                       </div>
-                  
-                  </section>
                   </div>
-               </div>
-               
+              </div>
+
+                  
+                   
             </div>
+            <!---->
+            
+
+
          </div>
       </div>
       <!-- about section -->
@@ -108,20 +128,15 @@
                <div class="row">
                   <div class="col-md-8 offset-md-2">
                      <ul class="location_icon">
-                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Ubicacón</li>
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Ubicación</li>
                         <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br>+504 32964280</li>
                         <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> TrulyNolen@gmail.com</li>
                      </ul>
                   </div>
                </div>
             </div>
+           
             <div class="copyright">
-               <div class="Horizontal">
-                  <div class="alert alert-success" id="greet" role="alert">
-                      
-                  </div>
-              </div>
-               
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
@@ -132,20 +147,35 @@
             </div>
          </div>
       </footer>
+      <div class="Horizontal">
+         <div class="alert alert-success" id="greet" role="alert">
+             
+         </div>
+     </div>
       <!-- end footer -->
+        <!-- Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+       <!-- jQuery -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <!-- DataTable -->
+       <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+       <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+       
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
+      
+      <!--<script src="./js/jquery.min.js"></script>--> <!-- no activar porque se desconfigura la tabla 
+       y causa muchos errores-->
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
+      <!--<script src="./js/jquery-3.0.0.min.js"></script>-->
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <!--<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>-->
       <script src="js/custom.js"></script>
       <script src="../src/scrip.js"></script>
       <!-- sidebar -->
-      <script src="../src/dycalendar.js"></script>
+    <!--<script src="../src/dycalendar.js"></script>-->  
       <script src="../src/main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+      
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"crossorigin="anonymous"></script>
    </body>
