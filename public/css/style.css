@@ -868,3 +868,9 @@ ul.location_icon li a {
      display:flow;
      margin-right: 59px;
 }
+
+#greet{
+     margin: 20px;
+     padding-left: 70vh;
+     font-size: x-large;
+}

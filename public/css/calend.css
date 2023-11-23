@@ -309,3 +309,39 @@
         opacity: 1;
     }
 }
+
+.boton{
+    border: 0;
+    background-image: linear-gradient(150deg ,
+    #9500ff, #09f,#00DDFF);
+    display: flex;
+    font-size: 18px;
+    border-radius:8px ;
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s;
+    padding: 4px;
+    
+
+}
+button span {
+   /* background-color: #111;*/
+    padding: 12px 13px;
+    border-radius: 6px;
+    transition: .3s;
+    margin-left: 0px;
+
+}
+
+button:hover span{
+background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.toggle span {
+    margin-right: 2px;
+    color: var(--color-txt);
+}
