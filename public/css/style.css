@@ -848,8 +848,23 @@ ul.location_icon li a {
 
  #datatable_users{
     /* background: #ffffff; */
-    background: url(images/html_table.jpg) center /cover;
+    background: #ffffff;
      background: -webkit-linear-gradient(to right, #6279f0, #6bb7ca)!important; /* Chrome 10-25, Safari 5.1-6 */
      background: linear-gradient(to right, #93f1f8, rgb(94, 207, 241), 179, 180)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      
  }
+
+.container-1{
+     display: contents;
+     margin-right: 70px;
+}
+.row-3{
+     display: flex;
+     justify-content: space-between;
+     margin-right: 30px;
+}
+.row-2{
+     
+     display:flow;
+     margin-right: 59px;
+}

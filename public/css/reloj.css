@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-3 {
+  /*  background: linear-gradient(skyblue, dodgerblue); */
+    min-height: 33vh;
+    display: flow;
+    position: relative;
+    margin-left: 59px;
+}
+
+
+#contenedor-reloj,
+#fondo,
+#hora-digital {
+    width: 300px;
+    height: 300px;
+}
+
+#fondo {
+    background: linear-gradient(white, lightgray);
+    border-radius: 50%;
+    border: 15px solid black;
+    filter: drop-shadow(0 10px 2px rgba(0, 0, 0, 0.5));
+}
+
+#contenedor-reloj,
+#manecillas {
+    position: relative;
+}
+
+#fondo,
+#horas,
+#minutos,
+#segundos,
+#hora-digital,
+#puntos  {
+    position: absolute;
+}
+
+#hora-digital {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    font-size: 130%;
+    opacity: 0.5;
+}
+
+#manecillas{
+    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.5));
+}
