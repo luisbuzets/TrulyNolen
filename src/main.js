@@ -19,7 +19,7 @@
 
             let CheckCred = ()=>{
                 if(!sessionStorage.getItem("user-creds"))
-                window.location.href = 'index.html'
+                window.location.href = 'login.html'
 
                 else{
               //      MsHead.innerText = `Usuario "${UserCreds.email}" inicio sesion`;
