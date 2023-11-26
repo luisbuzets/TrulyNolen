@@ -6,16 +6,15 @@ import { getDatabase, get, ref, child } from "https://www.gstatic.com/firebasejs
 import {getAuth, signInWithEmailAndPassword} from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDUv_3yA7Z8a099kJsH8PstJK3Bs32LrAA",
-  authDomain: "trulynolen-e51ef.firebaseapp.com",
-  databaseURL: "https://trulynolen-e51ef-default-rtdb.firebaseio.com",
-  projectId: "trulynolen-e51ef",
-  storageBucket: "trulynolen-e51ef.appspot.com",
-  messagingSenderId: "470832903507",
-  appId: "1:470832903507:web:9b88af8c8ca67e3e5b5da6",
-  measurementId: "G-D5XVM2P02W"
+  apiKey: "AIzaSyDch3MQ-T1GYWg_aP824AHbOqiketWKC6g",
+  authDomain: "truly-c01bd.firebaseapp.com",
+  databaseURL: "https://truly-c01bd-default-rtdb.firebaseio.com",
+  projectId: "truly-c01bd",
+  storageBucket: "truly-c01bd.appspot.com",
+  messagingSenderId: "216353435734",
+  appId: "1:216353435734:web:47ede8cf8d0e6948684bf7",
+  measurementId: "G-CE6J4FEGJH"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
